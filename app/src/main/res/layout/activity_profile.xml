@@ -8,21 +8,22 @@
     tools:context=".Profile">
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content" >
 
                 <ImageView
                     android:id="@+id/imageTop"
                     android:layout_width="wrap_content"
                     android:layout_height="210dp"
-                    app:srcCompat ="@drawable/ic_top"
+                    app:srcCompat = "@drawable/ic_top"
                     android:scaleType="fitXY"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -42,20 +43,19 @@
                     app:civ_border_width="4dp"
                     app:civ_border_color="#fff"
                     android:paddingBottom="15dp"
-
                     />
 
                 <TextView
                     android:id="@+id/textName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Muhammad Haekal"
+                    android:text="Muhammad Haekal - 311910062"
                     app:layout_constraintStart_toStartOf="@id/imgPhoto"
                     app:layout_constraintEnd_toEndOf="@id/imgPhoto"
                     app:layout_constraintBottom_toBottomOf="@id/imgPhoto"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
-                    android:textColor="@color/Blue"
+                    android:textColor="#000"
                     />
 
                 <LinearLayout
@@ -70,15 +70,110 @@
                     app:layout_constraintTop_toBottomOf="@id/textName"
                     >
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="0dp" />
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic1"
+                        android:text="Universitas Pelita Bangsa"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic3"
+                        android:text="TI.19.D4"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic2"
+                        android:text="mhaekal16@mhs.pelitabangsa.ac.id"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic5"
+                        android:text="0812-1234-5678"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_btn"
+                        android:drawableStart="@drawable/ic4"
+                        android:text="Perum Cibarusah Asri, Kab Bekasi"
+                        android:textAllCaps="false"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+                    <Button
+                        android:id="@+id/btnback"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_blue"
+                        android:text="Kembali Ke Halaman Utama"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:paddingStart="20dp"
+                        android:textStyle="bold"
+                        android:drawablePadding="20dp"
+                        android:elevation="3dp" />
+
+
+                </LinearLayout>
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
+
 
     </ScrollView>
 
